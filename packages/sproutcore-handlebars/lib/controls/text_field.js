@@ -19,10 +19,11 @@ SC.TextField = SC.View.extend(
   cancel: SC.K,
 
   tagName: "input",
-  attributeBindings: ['type', 'placeholder', 'value'],
+  attributeBindings: ['type', 'placeholder', 'value', 'maxlength'],
   type: "text",
   value: "",
   placeholder: null,
+  maxlength: null,
 
   focusOut: function(event) {
     this._elementValueDidChange();
